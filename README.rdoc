@@ -1,28 +1,17 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Blogger is a simple Rails app (5.0). The Ruby version is 2.4.2. DB is MySQL2.
 
-Things you may want to cover:
+I use this to test various services and instrumentations, so it can be a little wonky
+depending on the state.
 
-* Ruby version
+If you find you would like to use this for some of your own experiments, go for it.
+It currently lacks tests, but hopefully will have them soon.
 
-* System dependencies
+* Clone it
 
-* Configuration
+* bundle install
 
-* Database creation
+* rake db:setup
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Let me know if it's broken.
