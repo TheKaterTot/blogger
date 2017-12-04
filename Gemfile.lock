@@ -98,6 +98,8 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (12.3.0)
     rdoc (4.3.0)
+    ruby-metrics (0.9.3)
+      json (~> 1.5, >= 1.5.5)
     sdoc (0.4.2)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
@@ -129,6 +131,7 @@ DEPENDENCIES
   jquery-rails
   mysql2
   rails (= 5.0.1)
+  ruby-metrics
   sdoc
   turbolinks
   uglifier (>= 1.3.0)
