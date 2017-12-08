@@ -40,10 +40,13 @@ GEM
       tzinfo (~> 1.1)
     arel (7.1.4)
     builder (3.2.3)
+    coderay (1.1.2)
     concurrent-ruby (1.0.5)
     crass (1.0.3)
     erubis (2.7.0)
     execjs (2.7.0)
+    faker (1.8.4)
+      i18n (~> 0.5)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (0.9.1)
@@ -70,6 +73,9 @@ GEM
     nio4r (1.2.1)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
     rack (2.0.3)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -117,7 +123,7 @@ GEM
     turbolinks-source (5.0.3)
     tzinfo (1.2.4)
       thread_safe (~> 0.1)
-    uglifier (3.2.0)
+    uglifier (4.0.1)
       execjs (>= 0.3.0, < 3)
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
@@ -127,9 +133,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  faker
   jbuilder (~> 1.2)
   jquery-rails
   mysql2
+  pry
   rails (= 5.0.1)
   ruby-metrics
   sdoc
