@@ -3,9 +3,20 @@
 <head>
   <title>Blogger</title>
   <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Blogger</a>
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/articles/new">Create A New Article</a>
 
+        </li>
+      </ul>
+    </div>
+  </nav>
 <p class="flash"><%= flash.notice %></p>
 
 <%= yield %>

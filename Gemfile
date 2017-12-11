@@ -13,6 +13,9 @@ gem 'jbuilder', '~> 1.2'
 gem 'ruby-metrics'
 gem 'faker'
 gem 'pry'
+gem 'twitter-bootstrap-rails'
+gem 'sass-rails'
+gem 'coffee-rails'
 
 group :doc do
   gem 'sdoc', require: false
