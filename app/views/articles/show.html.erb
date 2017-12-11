@@ -1,14 +1,18 @@
-<h1><%= @article.title %></h1>
-<p>
+<div class="jumbotron col-lg-6 mx-auto">
+  <h4><%= @article.title %></h4>
+  <h6><%= @article.body %></h6>
+  <p>
   Tags:
   <% @article.tags.each do |tag| %>
   <%= link_to tag.name, tag_path(tag) %>
   <% end %>
-</p>
-<p><%= @article.body %></p>
-<%= link_to "Edit", edit_article_path(@article) %>
-<h3>Comments(<%= @article.comments.count %>)</h3>
-<%= render partial: "articles/comment", collection: @article.comments.reverse %>
-<%= render partial: "comments/form" %>
-<%= link_to "Back to Articles Index", articles_path %>
-<%= link_to "Delete", article_path(@article), method: "delete", data: {confirm: "Do you really want to delete?"} %>
+  </p>
+
+  <%= link_to "Edit", edit_article_path(@article), :class => "btn btn-warning" %>
+  <%= button_to "Delete", article_path(@article), :class => "btn btn-danger", method: "delete" %>
+</div>
+<div class=" col-lg-6 mx-auto"
+  <h3>Comments(<%= @article.comments.count %>)</h3>
+  <%= render partial: "articles/comment", collection: @article.comments.reverse %>
+  <%= render partial: "comments/form" %>
+</div>
