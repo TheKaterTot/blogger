@@ -7,7 +7,7 @@ Tag.destroy_all
 Comment.destroy_all
 
 40.times do
-  Article.create(title: Faker::StarWars.planet, body: Faker::StarWars.quote)
+  Article.create(title: Faker::StarWars.planet, body: Faker::Lorem.paragraphs(2))
 end
 
 20.times do
